@@ -1,0 +1,92 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: flex-start; /* Alinear al inicio verticalmente */
+  gap: 20px; /* Espacio entre tabla y formulario */
+}
+
+.Caja {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Hacer que las cajas crezcan proporcionalmente */
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+/* Estilo de la tabla */
+#Tabla {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#Tabla th,
+#Tabla td {
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+
+#Tabla th {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+#Tabla tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilo del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos del formulario */
+}
+
+label {
+  font-weight: bold;
+  color: #555555;
+}
+
+input[type="text"],
+input[type="submit"] {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Apilar elementos verticalmente */
+  }
+}

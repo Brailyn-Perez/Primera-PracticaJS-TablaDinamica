@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla Dinamica con JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Caja">
+        <h1>Tabla Dinamica con JS</h1>
+        <!-- Tabla Dinamica -->
+        <table id="Tabla">
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Acciones</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="Caja">
+        <!-- Formulario para llenar la tabla -->
+        <form id="Formulario">
+          <label for="Nombre">Nombre</label><br />
+          <input type="text" name="Nombre" id="Nombre" required /><br />
+          <label for="Apellido">Apellido</label><br />
+          <input type="text" name="Apellido" id="Apellido" required /><br />
+          <label for="Telefono">Telefono</label><br />
+          <input type="text" name="Telefono" id="Telefono" required /><br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
